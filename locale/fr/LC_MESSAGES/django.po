@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-18 13:05+0100\n"
+"PO-Revision-Date: 2018-01-18 11:21+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: templates/coopfacevoice/Decision.html:11
+#, python-format
+msgid ""
+"\n"
+"        Please select the person with whom you will interact, knowing that "
+"you will put %(contrib)s in the collective account.\n"
+"        "
+msgstr ""
+"\n"
+"Veuillez choisir la personne avec laquelle vous souhaitez interagir, sachant "
+"que vous placez %(contrib)s dans le compte collectif."
+
+#: templates/coopfacevoice/End.html:6
+msgid "End of experiment"
+msgstr "Fin de l'expérience"
+
+#: templates/coopfacevoice/End.html:10
+msgid "The experiment is over. Your payoff is equal to "
+msgstr "L'expérience est terminée. Vous avez gagné "
+
+#: templates/coopfacevoice/Instructions.html:6
+msgid "Welcome to the LEEM"
+msgstr "Bienvenue au LEEM"
+
+#: templates/coopfacevoice/Instructions.html:12
+msgid "Please read the instructions and then clic on the next button below."
+msgstr ""
+"Merci de lire les instructions. Vous cliquerez sur le bouton \"suivant\" "
+"lorsque vous aurez terminé."
+
+#: templates/coopfacevoice/InstructionsRead.html:8
+msgid ""
+"We are waiting that all participants finish the lecture of the instructions"
+msgstr ""
+"Nous attendons que tous les participants aient fini la lecture des "
+"instructions"
+
+#: templates/coopfacevoice/Results.html:6
+msgid "End of the part"
+msgstr "Fin de la partie"
+
+#: templates/coopfacevoice/Results.html:12
+#, python-format
+msgid ""
+"\n"
+"        This is your choice at question %(question)s that has been selected "
+"for your payoff. <br />\n"
+"        "
+msgstr ""
+"\n"
+"C'est votre choix à la question %(question)s qui a été sélectionné pour "
+"votre gain. <br />"
+
+#: templates/coopfacevoice/Results.html:15
+msgid "Your payoff for the part is equal to "
+msgstr "Votre gain pour la partie est de "

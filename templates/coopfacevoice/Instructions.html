@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Welcome to the LEEM" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% trans "Please read the instructions and then clic on the next button below." %}
+    </p>
+
+    {% next_button %}
+
+{% endblock %}

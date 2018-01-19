@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "End of the part" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% blocktrans with question=period_selected_for_pay %}
+        This is your choice at question {{ question }} that has been selected for your payoff. <br />
+        {% endblocktrans %}
+        {% trans "Your payoff for the part is equal to " %} {{ player.part_payoff }}.</p>
+
+    {% next_button %}
+
+{% endblock %}
+
+
