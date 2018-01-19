@@ -52,6 +52,7 @@ class Player(BasePlayer):
         choices=[(0, "Gauche"), (1, "Droite")],
         widget=widgets.RadioSelectHorizontal)
     choose_cooperator = models.BooleanField()
+    number_of_cooperators_found = models.IntegerField()
     period_selected_for_pay = models.BooleanField()
     part_payoff = models.CurrencyField()
 
@@ -71,6 +72,10 @@ class Player(BasePlayer):
             self.period_selected_for_pay = False
 
         if self.round_number == Constants.num_rounds:
+            # compute the number of "good" answer
+            self.number_of_cooperators_found = sum(
+                [p.choose_cooperator for p in self.in_all_rounds()])
+            # compute the part payoff
             self.part_payoff = sum(
                 [p.payoff for p in self.in_all_rounds() if
                  p.period_selected_for_pay])
