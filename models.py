@@ -2,6 +2,7 @@ from otree.api import (
     models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
     Currency as c, currency_range
 )
+from django.utils.translation import ugettext
 import random
 
 
@@ -23,10 +24,16 @@ class Constants(BaseConstants):
     cooperators = ["1_201016", "11_120117", "11_160117", "17_090117", "5_120117", "7_090117", "7_171016"]
     defectors = ["1_081116", "1_130117", "1_181016", "11_090117", "13_090117", "15_211016", "5_171016"]
     num_rounds = len(cooperators)
+    no_deaf = 0
+    deaf_only = 1
+    deaf_mix = 2
 
 
 class Subsession(BaseSubsession):
+    treatment = models.IntegerField()
+
     def creating_session(self):
+        self.treatment = self.session.config["treatment"]
         if self.round_number == 1:
             for p in self.get_players():
                 p.participant.vars["cooperators"] = Constants.cooperators.copy()
@@ -45,11 +52,12 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
+    deaf = models.IntegerField()
     coop_id = models.StringField()
     noncoop_id = models.StringField()
     left_is_coop = models.BooleanField()
     choice_id = models.PositiveIntegerField(
-        choices=[(0, "Gauche"), (1, "Droite")],
+        choices=[(0, ugettext("left")), (1, ugettext("right"))],
         widget=widgets.RadioSelectHorizontal)
     choose_cooperator = models.BooleanField()
     number_of_cooperators_found = models.IntegerField()
