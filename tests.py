@@ -8,8 +8,10 @@ import random
 class PlayerBot(Bot):
 
     def play_round(self):
-        yield (pages.Instructions)
-        yield Submission(pages.InstructionsRead, check_html=False)
+        if self.round_number == 1:
+            yield (pages.Instructions)
+            yield Submission(pages.InstructionsRead, check_html=False)
         yield (pages.Decision, {"choice_id": random.randint(0, 1)})
-        yield (pages.Results)
-        yield Submission(pages.End, check_html=False)
+        if self.round_number == Constants.num_rounds:
+            yield (pages.Results)
+            yield Submission(pages.End, check_html=False)
