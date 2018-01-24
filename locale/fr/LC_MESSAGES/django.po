@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-19 14:38+0100\n"
-"PO-Revision-Date: 2018-01-19 14:39+0100\n"
+"POT-Creation-Date: 2018-01-24 09:51+0100\n"
+"PO-Revision-Date: 2018-01-24 09:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:59
+#: models.py:60
 msgid "left"
 msgstr "gauche"
 
-#: models.py:59
+#: models.py:60
 msgid "right"
 msgstr "droite"
 
@@ -31,12 +31,16 @@ msgstr "droite"
 msgid ""
 "\n"
 "        Please select the person with whom you will interact, knowing that "
-"you will put %(contrib)s in the collective account.\n"
+"you will put %(contrib)s tokens in the collective account.\n"
 "        "
 msgstr ""
 "\n"
 "Veuillez choisir la personne avec laquelle vous souhaitez interagir, sachant "
-"que vous placez %(contrib)s dans le compte collectif."
+"que vous placez %(contrib)s jetons dans le compte collectif."
+
+#: templates/coopfacevoice/Decision.html:27
+msgid "Which player do you want to interact with?"
+msgstr "Avec quel joueur souhaitez-vous interagir?"
 
 #: templates/coopfacevoice/End.html:6
 msgid "End of experiment"
