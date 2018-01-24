@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-24 15:14+0100\n"
-"PO-Revision-Date: 2018-01-24 15:15+0100\n"
+"POT-Creation-Date: 2018-01-24 16:09+0100\n"
+"PO-Revision-Date: 2018-01-24 16:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -25,6 +25,10 @@ msgstr "gauche"
 #: models.py:60
 msgid "right"
 msgstr "droite"
+
+#: templates/coopfacevoice/Decision.html:6
+msgid "Decision"
+msgstr "Décision"
 
 #: templates/coopfacevoice/Decision.html:11
 #, python-format
@@ -43,12 +47,12 @@ msgid "Which player do you want to interact with?"
 msgstr "Avec quel joueur souhaitez-vous interagir?"
 
 #: templates/coopfacevoice/End.html:6
-msgid "End of experiment"
-msgstr "Fin de l'expérience"
+msgid "End of part"
+msgstr "Fin de la partie"
 
-#: templates/coopfacevoice/End.html:10
-msgid "The experiment is over. Your payoff is equal to "
-msgstr "L'expérience est terminée. Vous avez gagné "
+#: templates/coopfacevoice/End.html:12
+msgid "The part is over. Your payoff for this part is equal to "
+msgstr "La partie est terminée. Votre gain pour cette partie est de "
 
 #: templates/coopfacevoice/Instructions.html:6
 msgid "Welcome"
@@ -86,6 +90,9 @@ msgstr ""
 #: templates/coopfacevoice/Results.html:15
 msgid "Your payoff for the part is equal to "
 msgstr "Votre gain pour la partie est de "
+
+#~ msgid "End of experiment"
+#~ msgstr "Fin de l'expérience"
 
 #~ msgid "Welcome to the LEEM"
 #~ msgstr "Bienvenue au LEEM"

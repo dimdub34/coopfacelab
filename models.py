@@ -87,7 +87,7 @@ class Player(BasePlayer):
             self.part_payoff = sum(
                 [p.payoff for p in self.in_all_rounds() if
                  p.period_selected_for_pay])
-            self.participant.vars["coopfacevoice_payoff"] = self.part_payoff
+            self.participant.vars["coopfacevoice__payoff"] = self.part_payoff
             self.participant.payoff = \
                 self.participant.vars.get("public_goods_simple__payoff", 0) + \
                 self.part_payoff

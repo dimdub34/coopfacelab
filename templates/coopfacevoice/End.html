@@ -3,12 +3,14 @@
 {% load i18n %}
 
 {% block title %}
-    {% trans "End of experiment" %}
+    {%trans "End of part" %}
 {% endblock %}
 
 {% block content %}
-    <p>{% trans "The experiment is over. Your payoff is equal to " %} {{ player.participant.payoff_plus_participation_fee }}.</p>
+
+    <p>
+        {% trans "The part is over. Your payoff for this part is equal to " %} {{ subsession_payoff }}.
+    </p>
+
 
 {% endblock %}
-
-

@@ -47,5 +47,8 @@ class End(Page):
     def is_displayed(self):
         return self.round_number == Constants.num_rounds
 
+    def vars_for_template(self):
+        return {"subsession_payoff": c(self.participant.vars["coopfacevoice__payoff"]).to_real_world_currency(self.session)}
+
 
 page_sequence = [Instructions, InstructionsRead, Decision, Results, End]
