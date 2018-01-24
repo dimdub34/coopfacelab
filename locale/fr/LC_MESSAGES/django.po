@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-24 09:51+0100\n"
-"PO-Revision-Date: 2018-01-24 09:51+0100\n"
+"POT-Creation-Date: 2018-01-24 15:14+0100\n"
+"PO-Revision-Date: 2018-01-24 15:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -51,11 +51,11 @@ msgid "The experiment is over. Your payoff is equal to "
 msgstr "L'expérience est terminée. Vous avez gagné "
 
 #: templates/coopfacevoice/Instructions.html:6
-msgid "Welcome to the LEEM"
-msgstr "Bienvenue au LEEM"
+msgid "Welcome"
+msgstr "Bienvenue"
 
 #: templates/coopfacevoice/Instructions.html:12
-msgid "Please read the instructions and then clic on the next button below."
+msgid "Please read the instructions and then click on the next button below."
 msgstr ""
 "Merci de lire les instructions. Vous cliquerez sur le bouton \"suivant\" "
 "lorsque vous aurez terminé."
@@ -86,3 +86,6 @@ msgstr ""
 #: templates/coopfacevoice/Results.html:15
 msgid "Your payoff for the part is equal to "
 msgstr "Votre gain pour la partie est de "
+
+#~ msgid "Welcome to the LEEM"
+#~ msgstr "Bienvenue au LEEM"
