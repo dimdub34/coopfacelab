@@ -9,7 +9,7 @@
 {% block content %}
     <p>
         {% blocktrans with contrib=Constants.contribution %}
-        Please select the person with whom you will interact, knowing that you will put {{ contrib }} in the collective account.
+        Please select the person with whom you will interact, knowing that you will put {{ contrib }} tokens in the collective account.
         {% endblocktrans %}
     </p>
     <table>
@@ -23,8 +23,9 @@
             {% endif %}
         </tr>
     </table>
-
-    {% formfield player.choice_id label="Quel joueur choisissez-vous?" %}
+    <p>&nbsp;</p>
+    {% trans "Which player do you want to interact with?" %}
+    {% formfield player.choice_id label="" %}
 
     {% next_button %}
 
