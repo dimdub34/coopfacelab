@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Decision" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% blocktrans with endowment=Constants.endowment %}
+        You have an endowment of {{endowment}} tokens.
+        {% endblocktrans %}
+    </p>
+
+    <p>
+        {%trans "Please enter the number of tokens you put in the collective account" %}
+        {% formfield player.PG_contribution label="" %}
+    </p>
+
+    {% next_button %}
+
+{% endblock %}

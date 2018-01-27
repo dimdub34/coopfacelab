@@ -14,7 +14,7 @@
     </p>
     <table>
         <tr>
-            {% if self.player.left_is_coop %}
+            {% if self.player.CF_cooperator_on_left %}
                 <td><img src="{% static coop_pic %}" width="200px" /></td>
                 <td><img src="{% static noncoop_pic %}" width="200px"/></td>
             {% else %}
@@ -25,7 +25,7 @@
     </table>
     <p>&nbsp;</p>
     {% trans "Which player do you want to interact with?" %}
-    {% formfield player.choice_id label="" %}
+    {% formfield player.CF_choice label="" %}
 
     {% next_button %}
 

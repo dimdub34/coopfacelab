@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "End of the experiment" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>{% trans "The experiment is over. Your payoff is equal to " %} {{ player.participant.payoff_plus_participation_fee }}.</p>
+
+
+    <p>
+        {% trans "You can write some comments about the experiment below" %}
+        {% formfield player.comments label="" %}
+    </p>
+
+    <button>{%trans "Save" %}</button>
+
+{% endblock %}

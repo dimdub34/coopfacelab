@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {%trans "End of part" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% trans "The part is over. Your payoff for this part is equal to " %} {{ pg_payoff }}.
+    </p>
+
+
+{% endblock %}

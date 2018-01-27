@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "End of the experiment" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>{% trans "The experiment is over. Your payoff is equal to " %} {{ player.participant.payoff_plus_participation_fee }}.</p>
+
+{% endblock %}

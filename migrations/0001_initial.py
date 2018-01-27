@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
                 ('choose_cooperator', otree.db.models.BooleanField(choices=[(True, 'Yes'), (False, 'No')])),
                 ('period_selected_for_pay', otree.db.models.BooleanField(choices=[(True, 'Yes'), (False, 'No')])),
                 ('part_payoff', otree.db.models.CurrencyField(null=True)),
-                ('group', models.ForeignKey(to='coopfacevoice.Group', null=True)),
+                ('group', models.ForeignKey(to='coopfacelab.Group', null=True)),
                 ('participant', models.ForeignKey(to='otree.Participant', related_name='coopfacevoice_player')),
                 ('session', models.ForeignKey(to='otree.Session', related_name='coopfacevoice_player')),
             ],
@@ -66,11 +66,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='player',
             name='subsession',
-            field=models.ForeignKey(to='coopfacevoice.Subsession'),
+            field=models.ForeignKey(to='coopfacelab.Subsession'),
         ),
         migrations.AddField(
             model_name='group',
             name='subsession',
-            field=models.ForeignKey(to='coopfacevoice.Subsession'),
+            field=models.ForeignKey(to='coopfacelab.Subsession'),
         ),
     ]

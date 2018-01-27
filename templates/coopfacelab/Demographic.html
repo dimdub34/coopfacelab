@@ -1,0 +1,46 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Final questionnaire" %}
+{% endblock %}
+
+{% block content %}
+
+{% trans "The questionnaire below is anonymous, so please answer sincerely" %}
+
+    {% for field in form %}
+        {% formfield field %}
+    {% endfor %}
+
+    {% next_button %}
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+        /* we disabled the student_level and student_discipline combobox
+        if the subject is not a student */
+        window.onload = function() {
+            var combo_discipline = $("#id_student_discipline");
+            combo_discipline.prop("disabled", true);
+            var combo_student_level = $("#id_student_level");
+            combo_student_level.prop("disabled", true);
+            var student_no = $("#id_student_0");
+            student_no.onclick = function(){
+                combo_discipline.options[0].selected=true;
+                combo_discipline.prop("disabled", true);
+                combo_student_level.options[0].selected = true;
+                combo_student_level.prop("disabled", true);
+            }
+            var student_yes = document.querySelector("#id_student_1");
+            student_yes.onclick = function(){
+                combo_student_level.prop("disabled", false);
+                combo_discipline.prop("disabled", false);
+            }
+        }
+    </script>
+
+{% endblock %}

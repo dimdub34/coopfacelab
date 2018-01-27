@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+{% block title %}
+    {%trans "Summary" %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        {% blocktrans with endowment=Constants.endowment %}
+        You started with an endowment of {{ endowment }} tokens.
+        {% endblocktrans %}
+        {% blocktrans with contrib=player.PG_contribution contrib_group=group.PG_group_contribution %}
+        You put {{ contrib }} token(s) in the collective account and your group put a total of {{ contrib_group }} token(s) in this account.
+        {% endblocktrans %}
+        {% blocktrans with payoff_coll_acc=player.PG_payoff_collective_account payoff_indiv_acc=player.PG_payoff_individual_account payoff=player.PG_payoff %}
+        Your payoff is equal to {{ payoff_indiv_acc }} (individual account) + {{ payoff_coll_acc }} (collective account) = {{ payoff }}.
+        {% endblocktrans %}
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
