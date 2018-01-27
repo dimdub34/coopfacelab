@@ -104,7 +104,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal)
     student_level = models.IntegerField(
         choices=[(0, ugettext('Bachelor')), (1, ugettext('Master')),
-                 (3, ugettext('PhD')), (4, ugettext('Not in the list'))],
+                 (2, ugettext('PhD')), (3, ugettext('Not in the list'))],
         blank=True)
     student_discipline = models.StringField(
         choices=[
