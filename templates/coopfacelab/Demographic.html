@@ -29,17 +29,17 @@
             var combo_student_level = $("#id_student_level");
             combo_student_level.prop("disabled", true);
             var student_no = $("#id_student_0");
-            student_no.onclick = function(){
-                combo_discipline.options[0].selected=true;
+            student_no.click(function(){
+                combo_discipline.val("");
                 combo_discipline.prop("disabled", true);
-                combo_student_level.options[0].selected = true;
+                combo_student_level.val("");
                 combo_student_level.prop("disabled", true);
-            }
-            var student_yes = document.querySelector("#id_student_1");
-            student_yes.onclick = function(){
+            });
+            var student_yes = $("#id_student_1");
+            student_yes.click(function(){
                 combo_student_level.prop("disabled", false);
                 combo_discipline.prop("disabled", false);
-            }
+            });
         }
     </script>
 
