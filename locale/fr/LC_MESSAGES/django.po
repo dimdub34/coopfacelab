@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-24 16:09+0100\n"
-"PO-Revision-Date: 2018-01-24 16:10+0100\n"
+"POT-Creation-Date: 2018-01-27 14:42+0100\n"
+"PO-Revision-Date: 2018-01-27 14:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,19 +18,84 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:60
+#: models.py:85
 msgid "left"
 msgstr "gauche"
 
-#: models.py:60
+#: models.py:85
 msgid "right"
 msgstr "droite"
 
-#: templates/coopfacevoice/Decision.html:6
+#: models.py:94
+msgid "What is your age?"
+msgstr "Quel est votre âge?"
+
+#: models.py:97
+msgid "Female"
+msgstr "Femme"
+
+#: models.py:97
+msgid "Male"
+msgstr "Homme"
+
+#: models.py:98
+msgid "What is your gender?"
+msgstr "Quel est votre genre?"
+
+#: models.py:101 models.py:117 models.py:121
+msgid "No"
+msgstr "Non"
+
+#: models.py:101 models.py:117 models.py:121
+msgid "Yes"
+msgstr "Oui"
+
+#: models.py:102
+msgid "Are you a student?"
+msgstr "Etes-vous étudiant(e)?"
+
+#: models.py:105
+msgid "Bachelor"
+msgstr "Licence"
+
+#: models.py:105
+msgid "Master"
+msgstr "Master"
+
+#: models.py:106
+msgid "PhD"
+msgstr "Doctorant"
+
+#: models.py:106
+msgid "Not in the list"
+msgstr "Pas dans la liste"
+
+#: models.py:115
+msgid "What are you studying?"
+msgstr "Qu'étudiez-vous?"
+
+#: models.py:118
+msgid "Do you pratice (regularly) some sport?"
+msgstr "Pratiquez-vous régulièrement du sport?"
+
+#: models.py:122
+msgid "Have you ever participated in an experiment?"
+msgstr "Aviez-vous déjà participé à une expérience d'économie?"
+
+#: pages.py:29
+msgid ""
+"If you are a student you must select your level of study and the displine "
+"you are studying"
+msgstr ""
+"Si vous êtes étudiant(e) alors vous devez préciser votre niveau d'étude et "
+"la discipline que vous étudiez"
+
+#: templates/coopfacelab/CFDecision.html:6
+#: templates/coopfacelab/PGDecision.html:6
 msgid "Decision"
 msgstr "Décision"
 
-#: templates/coopfacevoice/Decision.html:11
+#: templates/coopfacelab/CFDecision.html:11
 #, python-format
 msgid ""
 "\n"
@@ -42,40 +107,23 @@ msgstr ""
 "Veuillez choisir la personne avec laquelle vous souhaitez interagir, sachant "
 "que vous placez %(contrib)s jetons dans le compte collectif."
 
-#: templates/coopfacevoice/Decision.html:27
+#: templates/coopfacelab/CFDecision.html:27
 msgid "Which player do you want to interact with?"
 msgstr "Avec quel joueur souhaitez-vous interagir?"
 
-#: templates/coopfacevoice/End.html:6
+#: templates/coopfacelab/CFEnd.html:6 templates/coopfacelab/PGEnd.html:6
 msgid "End of part"
 msgstr "Fin de la partie"
 
-#: templates/coopfacevoice/End.html:12
+#: templates/coopfacelab/CFEnd.html:12 templates/coopfacelab/PGEnd.html:12
 msgid "The part is over. Your payoff for this part is equal to "
 msgstr "La partie est terminée. Votre gain pour cette partie est de "
 
-#: templates/coopfacevoice/Instructions.html:6
-msgid "Welcome"
-msgstr "Bienvenue"
-
-#: templates/coopfacevoice/Instructions.html:12
-msgid "Please read the instructions and then click on the next button below."
-msgstr ""
-"Merci de lire les instructions. Vous cliquerez sur le bouton \"suivant\" "
-"lorsque vous aurez terminé."
-
-#: templates/coopfacevoice/InstructionsRead.html:8
-msgid ""
-"We are waiting that all participants finish the lecture of the instructions"
-msgstr ""
-"Nous attendons que tous les participants aient fini la lecture des "
-"instructions"
-
-#: templates/coopfacevoice/Results.html:6
+#: templates/coopfacelab/CFResults.html:6
 msgid "End of the part"
 msgstr "Fin de la partie"
 
-#: templates/coopfacevoice/Results.html:12
+#: templates/coopfacelab/CFResults.html:12
 #, python-format
 msgid ""
 "\n"
@@ -87,12 +135,105 @@ msgstr ""
 "C'est votre choix à la question %(question)s qui a été sélectionné pour "
 "votre gain. <br />"
 
-#: templates/coopfacevoice/Results.html:15
+#: templates/coopfacelab/CFResults.html:15
 msgid "Your payoff for the part is equal to "
 msgstr "Votre gain pour la partie est de "
 
-#~ msgid "End of experiment"
-#~ msgstr "Fin de l'expérience"
+#: templates/coopfacelab/Demographic.html:6
+msgid "Final questionnaire"
+msgstr "Questionnaire final"
+
+#: templates/coopfacelab/Demographic.html:11
+msgid "The questionnaire below is anonymous, so please answer sincerely"
+msgstr ""
+"Le questionnaire ci-dessous est anonyme, merci d'y répondre avec sincérité"
+
+#: templates/coopfacelab/Final.html:6
+#: templates/coopfacelab/Final_after_comments.html:6
+msgid "End of the experiment"
+msgstr "Fin de l'expérience"
+
+#: templates/coopfacelab/Final.html:11
+#: templates/coopfacelab/Final_after_comments.html:11
+msgid "The experiment is over. Your payoff is equal to "
+msgstr "La partie est terminée. Votre gain pour cette partie est de "
+
+#: templates/coopfacelab/Final.html:15
+msgid "You can write some comments about the experiment below"
+msgstr "Vous pouvez écrire des commentaires sur l'expérience ci-dessous"
+
+#: templates/coopfacelab/Final.html:19
+msgid "Save"
+msgstr "Enregistrer"
+
+#: templates/coopfacelab/Instructions.html:6
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: templates/coopfacelab/Instructions.html:12
+msgid "Please read the instructions and then click on the next button below."
+msgstr ""
+"Merci de lire les instructions. Vous cliquerez sur le bouton \"suivant\" "
+"lorsque vous aurez terminé."
+
+#: templates/coopfacelab/InstructionsRead.html:8
+msgid ""
+"We are waiting that all participants finish the lecture of the instructions"
+msgstr ""
+"Nous attendons que tous les participants aient fini la lecture des "
+"instructions"
+
+#: templates/coopfacelab/PGDecision.html:12
+#, python-format
+msgid ""
+"\n"
+"        You have an endowment of %(endowment)s tokens.\n"
+"        "
+msgstr ""
+"\n"
+"Vous diposez d'une dotation de %(endowment)s jetons."
+
+#: templates/coopfacelab/PGDecision.html:18
+msgid "Please enter the number of tokens you put in the collective account"
+msgstr "Saisissez le nombre de jetons que vous placez dans le compte collectif"
+
+#: templates/coopfacelab/PGResults.html:6
+msgid "Summary"
+msgstr "Récapitulatif"
+
+#: templates/coopfacelab/PGResults.html:12
+#, python-format
+msgid ""
+"\n"
+"        You started with an endowment of %(endowment)s tokens.\n"
+"        "
+msgstr ""
+"\n"
+"Vous disposiez d'une dotation de %(endowment)s jetons."
+
+#: templates/coopfacelab/PGResults.html:15
+#, python-format
+msgid ""
+"\n"
+"        You put %(contrib)s token(s) in the collective account and your "
+"group put a total of %(contrib_group)s token(s) in this account.\n"
+"        "
+msgstr ""
+"\n"
+"Vous avez placé %(contrib)s jeton(s) dans le compte collectif et votre "
+"groupe a placé au total %(contrib_group)s jeton(s) dans ce compte."
+
+#: templates/coopfacelab/PGResults.html:18
+#, python-format
+msgid ""
+"\n"
+"        Your payoff is equal to %(payoff_indiv_acc)s (individual account) + "
+"%(payoff_coll_acc)s (collective account) = %(payoff)s.\n"
+"        "
+msgstr ""
+"\n"
+"Voter gain est égal à %(payoff_indiv_acc)s (individual account) + "
+"%(payoff_coll_acc)s (collective account) = %(payoff)s."
 
 #~ msgid "Welcome to the LEEM"
 #~ msgstr "Bienvenue au LEEM"
