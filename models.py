@@ -35,10 +35,11 @@ class Constants(BaseConstants):
 
 
 class Subsession(BaseSubsession):
-    experimental_room = Constants.in_lab
+    experimental_room = models.IntegerField()
     treatment = models.IntegerField()
 
     def creating_session(self):
+        self.experimental_room = Constants.in_lab
         self.treatment = self.session.config["treatment"]
 
         # creation of pairs of pictures
