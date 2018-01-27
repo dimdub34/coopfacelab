@@ -30,9 +30,12 @@ class Constants(BaseConstants):
     no_deaf = 0
     deaf_only = 1
     deaf_mix = 2
+    in_lab = 0
+    online = 1
 
 
 class Subsession(BaseSubsession):
+    experimental_room = Constants.in_lab
     treatment = models.IntegerField()
 
     def creating_session(self):
@@ -119,7 +122,6 @@ class Player(BasePlayer):
         verbose_name=gettext("Have you ever participated in an experiment?"),
         widget=widgets.RadioSelectHorizontal)
     comments = models.LongStringField(blank=True)
-
 
     def set_cf_period_payoff(self):
         if not self.CF_cooperator_on_left:  # defector on the left on the screen
