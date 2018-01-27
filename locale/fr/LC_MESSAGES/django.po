@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-27 14:42+0100\n"
-"PO-Revision-Date: 2018-01-27 14:50+0100\n"
+"POT-Creation-Date: 2018-01-27 17:57+0100\n"
+"PO-Revision-Date: 2018-01-27 18:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,67 +18,163 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: models.py:85
+#: models.py:86
 msgid "left"
 msgstr "gauche"
 
-#: models.py:85
+#: models.py:86
 msgid "right"
 msgstr "droite"
 
-#: models.py:94
+#: models.py:95
 msgid "What is your age?"
 msgstr "Quel est votre âge?"
 
-#: models.py:97
+#: models.py:98
 msgid "Female"
 msgstr "Femme"
 
-#: models.py:97
+#: models.py:98
 msgid "Male"
 msgstr "Homme"
 
-#: models.py:98
+#: models.py:99
 msgid "What is your gender?"
 msgstr "Quel est votre genre?"
 
-#: models.py:101 models.py:117 models.py:121
+#: models.py:102 models.py:123 models.py:127
 msgid "No"
 msgstr "Non"
 
-#: models.py:101 models.py:117 models.py:121
+#: models.py:102 models.py:123 models.py:127
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:102
+#: models.py:103
 msgid "Are you a student?"
 msgstr "Etes-vous étudiant(e)?"
 
-#: models.py:105
+#: models.py:106
 msgid "Bachelor"
 msgstr "Licence"
 
-#: models.py:105
+#: models.py:106
 msgid "Master"
 msgstr "Master"
 
-#: models.py:106
+#: models.py:107
 msgid "PhD"
 msgstr "Doctorant"
 
-#: models.py:106
+#: models.py:107 models.py:119
 msgid "Not in the list"
 msgstr "Pas dans la liste"
 
+#: models.py:111
+msgid "Administration"
+msgstr "Administration"
+
+#: models.py:111
+msgid "Archeology"
+msgstr "Archéologie"
+
+#: models.py:111
+msgid "Biology"
+msgstr "Biologie"
+
+#: models.py:112
+msgid "Buisiness school"
+msgstr "Ecole de commerce"
+
+#: models.py:112
+msgid "Chemistry"
+msgstr "Chimie"
+
+#: models.py:113
+msgid "Computer science"
+msgstr "Informatique"
+
+#: models.py:113 tests.py:30
+msgid "Economics"
+msgstr "Economie"
+
+#: models.py:114
+msgid "Education"
+msgstr "Education"
+
+#: models.py:114
+msgid "Law"
+msgstr "Droit"
+
+#: models.py:114
+msgid "Management"
+msgstr "Gestion"
+
 #: models.py:115
+msgid "Nursing school"
+msgstr "Ecole d'infirmière"
+
+#: models.py:115
+msgid "Engineer"
+msgstr "Ecole d'ingénieur"
+
+#: models.py:115
+msgid "Geography"
+msgstr "Géographie"
+
+#: models.py:116
+msgid "History"
+msgstr "Histoire"
+
+#: models.py:116
+msgid "Lettres"
+msgstr "Lettres"
+
+#: models.py:116
+msgid "Mathematics"
+msgstr "Mathématiques"
+
+#: models.py:117
+msgid "Medicine"
+msgstr "Médecine"
+
+#: models.py:117
+msgid "Music"
+msgstr "Musique"
+
+#: models.py:117
+msgid "Pharmacy"
+msgstr "Pharmacie"
+
+#: models.py:118
+msgid "Philosophy"
+msgstr "Philosophie"
+
+#: models.py:118
+msgid "Physics"
+msgstr "Physique"
+
+#: models.py:118
+msgid "Politics"
+msgstr "Sciences politiques"
+
+#: models.py:119
+msgid "Sociology"
+msgstr "Sociologie"
+
+#: models.py:119
+msgid "Sport"
+msgstr "Sport"
+
+#: models.py:121
 msgid "What are you studying?"
 msgstr "Qu'étudiez-vous?"
 
-#: models.py:118
+#: models.py:124
 msgid "Do you pratice (regularly) some sport?"
 msgstr "Pratiquez-vous régulièrement du sport?"
 
-#: models.py:122
+#: models.py:128
 msgid "Have you ever participated in an experiment?"
 msgstr "Aviez-vous déjà participé à une expérience d'économie?"
 

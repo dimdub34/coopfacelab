@@ -3,6 +3,7 @@ from . import pages
 from ._builtin import Bot
 from .models import Constants
 import random
+from django.utils.translation import ugettext
 
 
 class PlayerBot(Bot):
@@ -26,7 +27,7 @@ class PlayerBot(Bot):
                        "gender": random.randint(0, 1),
                        "student": random.randint(0, 1),
                        "student_level": random.randint(0, 2),
-                       "student_discipline": random.randint(0, 8),
+                       "student_discipline": ugettext("Economics"),
                        "sport": random.randint(0, 1),
                        "experience": random.randint(0, 1)
                    })
