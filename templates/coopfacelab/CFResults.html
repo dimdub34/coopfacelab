@@ -3,16 +3,24 @@
 {% load i18n %}
 
 {% block title %}
-    {% trans "End of the part" %}
+    {% trans "Summary" %}
 {% endblock %}
 
 {% block content %}
 
     <p>
-        {% blocktrans with question=period_selected_for_pay %}
-        This is your choice at question {{ question }} that has been selected for your payoff. <br />
+        {% blocktrans with question=CF_period_selected_for_pay %}
+        This is your choice at question {{ question }} that has been selected.
+        The player you've selected put
         {% endblocktrans %}
-        {% trans "Your payoff for the part is equal to " %} {{ player.CF_payoff }}.</p>
+        {% if CF_choose_cooperator %}
+            {{Constants.endowment}} {% trans "tokens" %}
+        {% else %}
+            {% trans "0 token" %}
+        {% endif %}
+        {% trans "in the collective account." %}
+        {% trans "Your payoff is equal to " %} {{ player.CF_payoff }}.
+    </p>
 
     {% next_button %}
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-27 17:57+0100\n"
-"PO-Revision-Date: 2018-01-27 18:00+0100\n"
+"POT-Creation-Date: 2018-01-28 10:27+0100\n"
+"PO-Revision-Date: 2018-01-28 10:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -90,11 +90,11 @@ msgstr "Ecole de commerce"
 msgid "Chemistry"
 msgstr "Chimie"
 
-#: models.py:113
+#: models.py:113 tests.py:33
 msgid "Computer science"
 msgstr "Informatique"
 
-#: models.py:113 tests.py:30
+#: models.py:113 tests.py:31
 msgid "Economics"
 msgstr "Economie"
 
@@ -102,7 +102,7 @@ msgstr "Economie"
 msgid "Education"
 msgstr "Education"
 
-#: models.py:114
+#: models.py:114 tests.py:31
 msgid "Law"
 msgstr "Droit"
 
@@ -134,7 +134,7 @@ msgstr "Lettres"
 msgid "Mathematics"
 msgstr "Mathématiques"
 
-#: models.py:117
+#: models.py:117 tests.py:32
 msgid "Medicine"
 msgstr "Médecine"
 
@@ -200,12 +200,12 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Veuillez choisir la personne avec laquelle vous souhaitez interagir, sachant "
+"Veuillez choisir l'individu avec lequel vous souhaitez interagir, sachant "
 "que vous placez %(contrib)s jetons dans le compte collectif."
 
 #: templates/coopfacelab/CFDecision.html:27
 msgid "Which player do you want to interact with?"
-msgstr "Avec quel joueur souhaitez-vous interagir?"
+msgstr "Avec quel individu souhaitez-vous interagir?"
 
 #: templates/coopfacelab/CFEnd.html:6 templates/coopfacelab/PGEnd.html:6
 msgid "End of part"
@@ -216,24 +216,38 @@ msgid "The part is over. Your payoff for this part is equal to "
 msgstr "La partie est terminée. Votre gain pour cette partie est de "
 
 #: templates/coopfacelab/CFResults.html:6
-msgid "End of the part"
-msgstr "Fin de la partie"
+#: templates/coopfacelab/PGResults.html:6
+msgid "Summary"
+msgstr "Récapitulatif"
 
 #: templates/coopfacelab/CFResults.html:12
 #, python-format
 msgid ""
 "\n"
-"        This is your choice at question %(question)s that has been selected "
-"for your payoff. <br />\n"
+"        This is your choice at question %(question)s that has been "
+"selected.\n"
+"        The player you've selected put\n"
 "        "
 msgstr ""
 "\n"
-"C'est votre choix à la question %(question)s qui a été sélectionné pour "
-"votre gain. <br />"
+"C'est votre choix à la question %(question)s qui a été sélectionné.\n"
+"L'individu que vous avez sélectionné a placé"
 
-#: templates/coopfacelab/CFResults.html:15
-msgid "Your payoff for the part is equal to "
-msgstr "Votre gain pour la partie est de "
+#: templates/coopfacelab/CFResults.html:17
+msgid "0 token"
+msgstr "0 jeton"
+
+#: templates/coopfacelab/CFResults.html:19
+msgid "tokens"
+msgstr "jetons"
+
+#: templates/coopfacelab/CFResults.html:21
+msgid "in the collective account."
+msgstr "dans le compte collectif."
+
+#: templates/coopfacelab/CFResults.html:23
+msgid "Your payoff is equal to "
+msgstr "Votre gain est de "
 
 #: templates/coopfacelab/Demographic.html:6
 msgid "Final questionnaire"
@@ -252,7 +266,7 @@ msgstr "Fin de l'expérience"
 #: templates/coopfacelab/Final.html:11
 #: templates/coopfacelab/Final_after_comments.html:11
 msgid "The experiment is over. Your payoff is equal to "
-msgstr "La partie est terminée. Votre gain pour cette partie est de "
+msgstr "L'expérience est terminée. Votre gain pour l'expérience est de "
 
 #: templates/coopfacelab/Final.html:15
 msgid "You can write some comments about the experiment below"
@@ -293,10 +307,6 @@ msgstr ""
 msgid "Please enter the number of tokens you put in the collective account"
 msgstr "Saisissez le nombre de jetons que vous placez dans le compte collectif"
 
-#: templates/coopfacelab/PGResults.html:6
-msgid "Summary"
-msgstr "Récapitulatif"
-
 #: templates/coopfacelab/PGResults.html:12
 #, python-format
 msgid ""
@@ -328,8 +338,11 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Voter gain est égal à %(payoff_indiv_acc)s (individual account) + "
-"%(payoff_coll_acc)s (collective account) = %(payoff)s."
+"Votre gain est égal à %(payoff_indiv_acc)s (compte individuel) + "
+"%(payoff_coll_acc)s (compte collectif) = %(payoff)s."
+
+#~ msgid "End of the part"
+#~ msgstr "Fin de la partie"
 
 #~ msgid "Welcome to the LEEM"
 #~ msgstr "Bienvenue au LEEM"
