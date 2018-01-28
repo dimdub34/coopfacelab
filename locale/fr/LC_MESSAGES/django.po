@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-28 10:27+0100\n"
-"PO-Revision-Date: 2018-01-28 10:40+0100\n"
+"POT-Creation-Date: 2018-01-28 11:07+0100\n"
+"PO-Revision-Date: 2018-01-28 11:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -195,8 +195,8 @@ msgstr "Décision"
 #, python-format
 msgid ""
 "\n"
-"        Please select the person with whom you will interact, knowing that "
-"you will put %(contrib)s tokens in the collective account.\n"
+"        Please select the player you want to interact with, knowing that you "
+"will put %(contrib)s tokens in the collective account.\n"
 "        "
 msgstr ""
 "\n"
@@ -234,18 +234,18 @@ msgstr ""
 "L'individu que vous avez sélectionné a placé"
 
 #: templates/coopfacelab/CFResults.html:17
-msgid "0 token"
-msgstr "0 jeton"
-
-#: templates/coopfacelab/CFResults.html:19
 msgid "tokens"
 msgstr "jetons"
+
+#: templates/coopfacelab/CFResults.html:19
+msgid "0 token"
+msgstr "0 jeton"
 
 #: templates/coopfacelab/CFResults.html:21
 msgid "in the collective account."
 msgstr "dans le compte collectif."
 
-#: templates/coopfacelab/CFResults.html:23
+#: templates/coopfacelab/CFResults.html:22
 msgid "Your payoff is equal to "
 msgstr "Votre gain est de "
 
