@@ -8,6 +8,21 @@
 
 {% block content %}
 
+    <table class="table">
+        <tr>
+            <th>{% trans "Round" %}</th>
+            <th>{% trans "Tokens put by" %} <br>{% trans "selected player" %}</th>
+            <th>{% trans "Your payoff" %}</th>
+        </tr>
+        {% for p in player.in_all_rounds %}
+            <tr>
+                <td>{{ p.round_number }}</td>
+                <td>{% if p.CF_choose_cooperator %} {{ Constants.endowment }} {% else %} 0 {% endif %}</td>
+                <td>{{ p.CF_payoff }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
     <p>
         {% blocktrans with question=CF_period_selected_for_pay %}
         This is your choice at question {{ question }} that has been selected.
