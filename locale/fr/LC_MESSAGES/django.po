@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-28 11:07+0100\n"
-"PO-Revision-Date: 2018-01-28 11:08+0100\n"
+"POT-Creation-Date: 2018-02-04 22:44+0100\n"
+"PO-Revision-Date: 2018-02-04 22:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -217,10 +217,26 @@ msgstr "La partie est terminée. Votre gain pour cette partie est de "
 
 #: templates/coopfacelab/CFResults.html:6
 #: templates/coopfacelab/PGResults.html:6
-msgid "Summary"
-msgstr "Récapitulatif"
+msgid "Results"
+msgstr "Résultats"
 
-#: templates/coopfacelab/CFResults.html:12
+#: templates/coopfacelab/CFResults.html:13
+msgid "Round"
+msgstr "Période"
+
+#: templates/coopfacelab/CFResults.html:14
+msgid "Tokens put by"
+msgstr "Jetons placés par"
+
+#: templates/coopfacelab/CFResults.html:14
+msgid "selected player"
+msgstr "le joueur sélectionné"
+
+#: templates/coopfacelab/CFResults.html:15
+msgid "Your payoff"
+msgstr "Votre gain"
+
+#: templates/coopfacelab/CFResults.html:27
 #, python-format
 msgid ""
 "\n"
@@ -233,19 +249,19 @@ msgstr ""
 "C'est votre choix à la question %(question)s qui a été sélectionné.\n"
 "L'individu que vous avez sélectionné a placé"
 
-#: templates/coopfacelab/CFResults.html:17
+#: templates/coopfacelab/CFResults.html:32
 msgid "tokens"
 msgstr "jetons"
 
-#: templates/coopfacelab/CFResults.html:19
+#: templates/coopfacelab/CFResults.html:34
 msgid "0 token"
 msgstr "0 jeton"
 
-#: templates/coopfacelab/CFResults.html:21
+#: templates/coopfacelab/CFResults.html:36
 msgid "in the collective account."
 msgstr "dans le compte collectif."
 
-#: templates/coopfacelab/CFResults.html:22
+#: templates/coopfacelab/CFResults.html:37
 msgid "Your payoff is equal to "
 msgstr "Votre gain est de "
 
@@ -340,6 +356,9 @@ msgstr ""
 "\n"
 "Votre gain est égal à %(payoff_indiv_acc)s (compte individuel) + "
 "%(payoff_coll_acc)s (compte collectif) = %(payoff)s."
+
+#~ msgid "Summary"
+#~ msgstr "Récapitulatif"
 
 #~ msgid "End of the part"
 #~ msgstr "Fin de la partie"
